@@ -206,28 +206,18 @@
   #lightbox img{ max-width:min(1200px,92vw); max-height:84vh; object-fit:contain; display:block; }
   #lightbox .label{ position:absolute; bottom:26px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.7); }
 
-  /* depoimentos */
-  #depoimentos{ background:#0a0a0a; color:#fff; padding:clamp(80px,11vw,150px) clamp(26px,6vw,64px); }
-  #depoimentos h2{ margin:0 0 18px 0; }
-  #depoimentos>.wrap>p{ margin:0 0 clamp(40px,5vw,70px) 0; max-width:640px; font-size:1.02rem; color:rgba(255,255,255,0.75); }
-  .depo-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1px; background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.18); }
-  @media (max-width:859px){ .depo-grid{ grid-template-columns:1fr; } }
-  .depo-card{ background:#0a0a0a; padding:34px 28px; display:flex; flex-direction:column; gap:16px; min-height:170px; justify-content:center; }
-  .depo-card .quote{ font-family:'Fraunces',serif; font-size:2rem; color:rgba(255,255,255,0.3); }
-  .depo-card p{ margin:0; font-style:italic; color:rgba(255,255,255,0.55); font-size:0.98rem; }
-
   /* faq */
-  #faq{ background:#fff; padding:clamp(80px,11vw,150px) clamp(26px,6vw,64px); }
+  #faq{ background:#0a0a0a; color:#fff; padding:clamp(80px,11vw,150px) clamp(26px,6vw,64px); }
   #faq .center{ max-width:760px; margin:0 auto; text-align:left; }
   #faq .eyebrow{ margin-bottom:16px; }
   #faq h2{ margin:0 0 clamp(28px,3.4vw,44px) 0; }
   #faq .list{ text-align:left; }
-  #faq details{ border-top:1px solid #dcdad6; padding:22px 0; }
+  #faq details{ border-top:1px solid rgba(255,255,255,0.18); padding:22px 0; }
   #faq summary{ display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:clamp(1.02rem,1.25vw,1.15rem); }
-  #faq summary .plus{ flex:0 0 auto; font-size:1.4rem; color:#8a8783; }
+  #faq summary .plus{ flex:0 0 auto; font-size:1.4rem; color:rgba(255,255,255,0.55); }
   #faq details[open] summary .plus{ transform:rotate(45deg); }
   #faq summary .plus{ transition:transform .25s ease; display:inline-block; }
-  #faq details p{ margin:16px 0 0 0; font-size:1rem; line-height:1.7; color:#4a4846; }
+  #faq details p{ margin:16px 0 0 0; font-size:1rem; line-height:1.7; color:rgba(255,255,255,0.75); }
 
   /* cta final */
   #cta-final{ position:relative; min-height:70vh; display:flex; align-items:center; justify-content:center; overflow:hidden; }
@@ -509,29 +499,12 @@
   <span id="lb-label" class="label"></span>
 </div>
 
-<!-- 8. DEPOIMENTOS -->
-<section id="depoimentos" data-screen-label="Depoimentos">
-  <div class="wrap">
-    <div class="eyebrow reveal" style="margin-bottom:16px;">
-      <span class="tag on-dark">07 — Depoimentos</span>
-      <span class="rule on-dark"></span>
-    </div>
-    <h2 class="section-title reveal" data-splittext="1">A experiência de quem já confiou no meu trabalho</h2>
-    <p class="reveal">Ao longo dos projetos, busco criar uma relação próxima com cada cliente, conduzindo o processo com clareza, organização e atenção aos detalhes. Aqui você poderá ver a experiência de quem já passou por esse processo comigo.</p>
-    <div class="depo-grid">
-      <div class="depo-card reveal"><span class="quote">"</span><p>Depoimento de cliente em breve.</p></div>
-      <div class="depo-card reveal"><span class="quote">"</span><p>Depoimento de cliente em breve.</p></div>
-      <div class="depo-card reveal"><span class="quote">"</span><p>Depoimento de cliente em breve.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 9. FAQ -->
+<!-- 8. FAQ -->
 <section id="faq" data-screen-label="FAQ">
   <div class="center">
     <div class="eyebrow reveal">
-      <span class="tag">08 — FAQ</span>
-      <span class="rule"></span>
+      <span class="tag on-dark">08 — FAQ</span>
+      <span class="rule on-dark"></span>
     </div>
     <h2 class="section-title reveal">Dúvidas frequentes</h2>
     <div class="list">
